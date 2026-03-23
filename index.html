@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Gian</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<!-- Cabeçalho / Menu -->
+<header>
+    <nav class="menu">
+        <h2 class="logo">Gian.dev</h2>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#formacao">Formação</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Apresentação que vem antes da aba sobre para chegar nela e preciso subir manualmente -->
+<section class="hero">
+    <h1>Olá, eu sou o Gian 👋</h1>
+    <p>Estudante de Engenharia de Software | Desenvolvedor em formação</p>
+</section>
+
+<!-- Aba Sobre -->
+<section id="sobre" class="container">
+    <h2>Sobre Mim</h2>
+    <p>
+        Sou estudante de Engenharia de Software apaixonado por tecnologia e desenvolvimento de sistemas.
+        Tenho me dedicado ao aprendizado de programação, desenvolvimento web e boas práticas de software.
+    </p>
+    <p>
+        Busco criar soluções eficientes, funcionais e com impacto real, sempre evoluindo minhas habilidades.
+    </p>
+</section>
+
+<!-- Aba Formação -->
+<section id="formacao" class="container">
+    <h2>Formação</h2>
+
+    <h3><img src="./img/icons/student.svg" alt="icons"> Graduação</h3>
+    <p>Engenharia de Software (em andamento)</p>
+
+    <h3><img src="./img/icons/App-Window-Pie-Chart--Streamline-Ultimate.svg" alt="icons"> Cursos</h3>
+    <ul>
+        <li>Lógica de Programação</li>
+        <li>HTML, CSS e JavaScript</li>
+    </ul>
+
+    <h3><img src="./img/icons/Multiple-Users-Network--Streamline-Ultimate.svg" alt="icons"> Idiomas</h3>
+    <ul>
+        <li>Português: Nativo</li>
+        <li>Inglês: Básico/Intermediário</li>
+    </ul>
+</section>
+
+<!-- Aba Portifolio -->
+<section id="portfolio" class="container">
+    <h2>Portfólio</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Projeto Web</h3>
+            <p>Criação de páginas responsivas com HTML, CSS e JavaScript.</p>
+        </div>
+
+        <div class="card">
+            <h3>Aplicações</h3>
+            <p>Projetos focados em lógica de programação e interatividade.</p>
+        </div>
+
+        <div class="card">
+            <h3>Projetos Acadêmicos</h3>
+            <p>Atividades práticas baseadas em Engenharia de Software.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contatos -->
+<section id="contato" class="container">
+    <h2>Contato</h2>
+    <p>Entre em contato comigo preenchendo o formulário abaixo:</p>
+
+    <form id="formContato">
+        <input type="text" id="nome" placeholder="Seu nome"><br>
+        <input type="email" id="email" placeholder="Seu e-mail"><br>
+        <textarea id="mensagem" placeholder="Sua mensagem"></textarea><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <p id="resposta"></p>
+</section>
+<!-- Roda pé do site-->
+<footer>
+    <p>© 2026 - Gian | Portfólio</p>
+</footer>
+
+<script src="./javascript/script.js"></script>
+</body>
+</html>
