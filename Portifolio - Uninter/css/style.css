@@ -1,0 +1,150 @@
+/* body */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #f8fafc, #e2e8f0); /* CLARO */
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* Menu */
+nav {
+    background: transparent; /* TOTALMENTE TRANSPARENTE */
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav ul li a {
+    color: #1e293b;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    position: relative;
+}
+
+/* Linha de animação com mouse */
+nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #7c3aed;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #7c3aed;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Seções */
+section {
+    padding: 120px 20px;
+    min-height: 100vh;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Titulos */
+h1, h2 {
+    color: #4c1d95;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Paragrafos */
+p {
+    margin-bottom: 15px;
+    color: #334155;
+}
+
+/* Listas */
+ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Cards */
+.card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 15px;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #7c3aed;
+}
+
+/* Formularios */
+input, textarea {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    background: white;
+    color: #1e293b;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #7c3aed;
+    box-shadow: 0 0 8px rgba(124, 58, 237, 0.2);
+}
+
+/* Botão de envio */
+button {
+    background: linear-gradient(135deg, #7c3aed, #a78bfa);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* LINKS */
+a {
+    color: #7c3aed;
+}
+
+html {
+    scroll-behavior: smooth;
+}
